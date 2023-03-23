@@ -1,10 +1,17 @@
 import { useState } from "react";
 import React from "react";
-import data from "./data.json";
+import data from "./data";
 import { Box, Boton, Coloredbox, Styledbutton } from "./button.js";
 import { Inicio } from "./inicio";
 
-
+/*export defaultfunction ImageWithText(props) {
+  return (
+    <div>
+      <img src={"images/" + props.img} alt={props.txt} />
+      <p>{props.txt}</p>
+    </div>
+  );
+}*/
 
 export default function Text() {
   const [count, setCount] = useState(0);
@@ -39,4 +46,7 @@ export default function Text() {
       })}
     </div>
   );
+
+
 }
+
